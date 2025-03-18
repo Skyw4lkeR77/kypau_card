@@ -5,14 +5,17 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     background-image: url('./asset/background-2.webp');
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
 }
+
 main {
     text-align: center;
+    width: 90%;
+    max-width: 400px;
 }
 
 .avatar {
@@ -20,6 +23,13 @@ main {
     height: 100px;
     border-radius: 50px;
     margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sosmed-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .sosmed {
@@ -33,6 +43,8 @@ main {
     font-size: 18px;
     font-weight: bold;
     color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .sosmedicon {
@@ -48,6 +60,7 @@ main {
     height: 32px;
     width: 32px;
     border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .arrowicon {
@@ -55,8 +68,9 @@ main {
     height: 16pc;
 }
 
-# kalau di klik nanti beda warna
+/* kalau di klik nanti beda warna */
 .sosmed:hover {
     background-color: rgb(2, 187, 172);
-    color: white;
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
 }
